@@ -10,7 +10,7 @@ setup(
     author='Shalabh Aggarwal',
     author_email='contact@shalabhaggarwal.com',
     description='Hello world application for Flask',
-    packages=['my_app', 'my_app.hello'],
+    packages=['my_app', 'my_app.hello'], #  Need to be : packages=['my_app', 'my_app.hello'], or packages=find_packages(),
     platforms='any',
     install_requires=[
         'flask',
