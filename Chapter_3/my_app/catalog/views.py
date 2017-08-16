@@ -12,6 +12,7 @@ def home():
     return "Welcome to the Catalog Home."
 
 
+# get_or_404(PK)
 @catalog.route('/product/<key>')
 def product(key):
     product = Product.query.get_or_404(key)
