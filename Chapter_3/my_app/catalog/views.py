@@ -14,7 +14,7 @@ def home():
 
 @catalog.route('/product/<key>')
 def product(key):
-    product = Product.query.get_or_404(key=key)
+    product = Product.query.get_or_404(key)
     return 'Product - %s, $%s' % (product.name, product.price)
 
 
