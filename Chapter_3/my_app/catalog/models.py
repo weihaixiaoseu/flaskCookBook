@@ -14,7 +14,7 @@ class Product(db.Model):
         self.category = category
 
     def __repr__(self):
-        return '<Product %d>' % self.id
+        return '<Product %s>' % self.name
 
 class Category(db.Model): 
     id = db.Column(db.Integer, primary_key=True)
@@ -23,7 +23,7 @@ class Category(db.Model):
     def __init__(self, name):
         self.name = name
     def __repr__(self):
-        return '<Category %d>' % self.id
+        return '<Category %s>' % self.name
 
 # class Product(db.Document):
 #     created_at = db.DateTimeField(
